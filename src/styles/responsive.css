@@ -1,0 +1,143 @@
+@media screen and (min-width: 650px) {
+  .app-bar {
+    padding: 20px 32px;
+    text-align: center;
+  }
+
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .categories {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .category {
+    grid-template-columns: auto 1fr;
+  }
+
+  .category .food__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .category .food__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* food */
+  .foodContainer {
+    display: flex;
+    gap: 30px;
+  }
+
+  .food__poster {
+    border-radius: 16px;
+    box-shadow: 0 2px 4px 0 rgba(131, 131, 131, 0.2);
+  }
+
+  .food__title {
+    text-align: left;
+    color: #db0000;
+    font-size: 38px;
+  }
+
+  .food__info {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    color: #2f2f2f;
+    margin-top: 10px;
+  }
+
+  .food__overview h3 {
+    text-align: left;
+    font-size: 26px;
+    color: #00000070;
+    margin-top: 25px;
+  }
+
+  .food__overview p {
+    text-align: left;
+    font-size: 18px;
+    color: #2f2f2f;
+    font-weight: 500;
+    margin-top: 5px;
+    line-height: 32px;
+  }
+
+  .food_receipt h3 {
+    text-align: left;
+    font-size: 26px;
+    color: #00000070;
+    margin-top: 25px;
+  }
+
+  .food_receipt ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7px;
+  }
+
+  .food_receipt ul li {
+    text-align: left;
+    font-size: 14px;
+    color: #2f2f2f;
+    font-weight: 600;
+    margin-top: 5px;
+    line-height: 22px;
+    margin-left: 20px;
+    flex-basis: calc(33.333% - 20px);
+    box-sizing: border-box;
+  }
+
+  .video__container {
+    margin-top: 70px;
+  }
+
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video__container h3 {
+    text-align: center;
+    font-size: 36px;
+    color: #00000070;
+    margin-bottom: 25px;
+  }
+
+  .video iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .categories {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
